@@ -10803,7 +10803,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .card-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+
+.card-img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-img-overlay {

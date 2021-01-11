@@ -5,6 +5,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirk-VQ.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -12,94 +13,129 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
 }
+
 body {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
 }
+
 .nav {
   margin: 0 auto;
   height: 90px;
   display: flex;
   align-items: center;
 }
+
 .nav__item {
   display: flex;
   width: 150px;
 }
+
 .nav__item a {
   color: #464646;
   text-decoration: none;
 }
+
 .nav__item-active {
   color: #424242;
   font-weight: 700;
 }
+
 .block {
   display: flex;
   height: 520px;
 }
+
 .block__image {
   object-fit: cover;
   width: 100%;
 }
+
 .block__image--column-1 {
   height: 260px;
 }
+
 .block__image--column-2 {
   height: 520px;
 }
+
 .block__image--row-1 {
   height: 345px;
 }
+
 .block a {
   display: flex;
 }
+
 .block__text {
   display: flex;
   align-items: flex-end;
   padding: 20px;
   width: 200px;
   position: absolute;
-  color: #ffffff;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 10px #000;
   line-height: 1.2;
 }
+
+.block__text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.block__text a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+
 .block__text--column-1 {
   font-size: 1.4rem;
   height: 210px;
 }
+
 .block__text--column-2 {
   font-size: 2rem;
   height: 460px;
   padding-left: 50px;
 }
+
 .block__text--row-1 {
   font-size: 1.4rem;
   height: 305px;
   width: 170px;
 }
+
+.block__column {
+  display: flex;
+}
+
 .block__column--one {
   height: 260px;
 }
+
 .block__row {
   height: 345px;
   display: flex;
   width: 210px;
 }
+
 .block__products {
   margin: 20px;
   height: 345px;
   justify-content: space-between;
   background: #e1e1e1;
 }
+
 .jumbotron {
   background-image: url(../img/jumbotron.jpg);
   display: flex;
 }
+
 .jumbotron__text {
   margin: 0 auto;
   font-size: 3rem;
@@ -109,6 +145,7 @@ body {
   align-items: center;
   line-height: 1.2;
 }
+
 .jumbotron__text span {
   font-weight: 700;
 }
